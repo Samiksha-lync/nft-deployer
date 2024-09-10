@@ -1,0 +1,119 @@
+.launch-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    gap:1.2rem;
+
+    .main-heading{
+        color:#3070E5 ;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 70px;
+
+    }
+    .sub-heading{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 70px;
+        color: #FFFFFF;
+    }
+}
+.details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(1, 9, 36, 0.2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    border-radius: 40px;
+    border: 1px solid #425895;
+    padding: 4em;
+    gap:1.2rem;
+
+    .image-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(1, 9, 36, 0.2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    border-radius: 40px;
+    width: 48em;
+    height: 20em;
+    color: white;
+    }
+}
+.sub-text{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #FFFFFFF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .transparent-input {
+        background-color:rgba(3, 8, 34, 0.1) ;
+        border: 1px solid white ;
+        color: #fff;
+        font-size: 16px; 
+        border-radius: 20px;
+        height: 5em;
+        width: 48em;
+      
+        &::placeholder {
+          color: #ccc; 
+          padding: 2em;
+        }
+      }
+
+      @media (max-width:1200px){
+        .launch-main-container{
+        .main-heading{
+            font-size: 35px;
+        }
+        .sub-heading{
+            font-size: 28px;
+        }
+        .sub-text{
+            font-size: 18px;
+        }
+        .transparent-input{
+            height: 3em;
+        width: 36em;
+        border-radius: 10px;
+        }
+        .image-box{
+            width: 36em;
+            height: 20em;
+        }
+    }
+    }
+
+    @media (max-width:800px){
+        .launch-main-container{
+        .main-heading{
+            font-size: 25px;
+        }
+        .sub-heading{
+            font-size: 20px;
+        }
+        .sub-text{
+            font-size: 20px;
+        }
+        .transparent-input{
+            height: 3em;
+        width: 20em;
+        border-radius: 10px;
+        }
+        .image-box{
+            width: 20em;
+            height: 20em;
+        }
+    }
+    }

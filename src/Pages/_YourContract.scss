@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-contract-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top:4em;
+    z-index: 2;
+    gap:2rem;
+}
+.contract-container{
+    background: rgba(107, 105, 105, 0.1);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    height: 40em;
+    width: 90rem;
+    border-radius: 40px;
+    border: 1px solid #425895;
+    color: white;
+    margin-bottom: 40px;
+}
+@media (max-width: 1300px) {
+    .contract-container {
+      width: 90%;
+    }
+  }
+
+.your-contract-heading{
+    font-size: 2.5rem;
+    color:#377AF6;
+    font-weight: 600;
+}
+.head-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+.right-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    border: 1px solid #425895;
+    border-radius: 7px;
+    height: 2em;
+    width: 8em;
+    justify-content: center;
+    align-items: center;
+}
+.contract-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin: 5rem;
+}
+.main-container-heading{
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.main-container-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.4rem;
+}
+.main-container-text-2{
+    font-size: 1.4rem;
+}
+.container-btns{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+
+    .deploy-contract-btn{
+        @extend %button-styles;
+    }
+    .new-contract-btn{
+        @extend %button-styles;
+    }
+}
+%button-styles{
+        height: 2.7em;
+        width: 13em;
+        font-size: 1rem;
+        background-color: #1B4A9F;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+}
