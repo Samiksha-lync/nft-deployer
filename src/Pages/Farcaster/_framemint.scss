@@ -1,0 +1,205 @@
+.frame-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    gap:1.2rem;
+    .main-heading{
+        color:#3070E5 ;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 70px;
+
+    }
+    .sub-heading{
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 70px;
+        color: #FFFFFF;
+    }
+}
+.property-components{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.properties-container{
+    background:linear-gradient(
+      #202B4ED9,#060D22D9
+    );
+    border: 1px solid rgb(184, 183, 183) ;
+    color: #fff;
+    height: 12em;
+    width: 48em;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 16px; 
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    .property-component-1, .property-component-2{
+        display: flex;
+        flex-direction: row;
+        gap:12rem;
+
+    }
+    .images{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+        .img-1{
+            height: 30px;
+            width: 30px;
+        }
+    }
+}
+.transparent-input {
+    background:linear-gradient(
+      #202B4ED9,#060D22D9
+    );
+    border: 1px solid rgb(184, 183, 183) ;
+    color: #fff;
+    font-size: 16px; 
+    border-radius: 10px;
+    height: 5em;
+    width: 48em;
+  
+    &::placeholder {
+      color: #ccc; 
+      padding: 2em;
+    }
+  }
+
+  .transparent-input-description {
+    background:linear-gradient(
+      #202B4ED9,#060D22D9
+    );
+    border: 1px solid rgb(172, 170, 170) ;
+    color: #fff;
+    font-size: 16px; 
+    border-radius: 10px;
+    height: 10em;
+    width: 48em;
+  
+    &::placeholder {
+      color: #ccc; 
+      padding: 2em;
+    }
+    input::placeholder{
+        position: absolute;
+            top: 0px;
+            left: 10px;
+            color: #888;
+            font-size: 14px;
+    }
+  }
+  .details-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(1, 9, 36, 0.2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 10 10px rgba(30, 44, 84, 0.1) inset;
+    border-radius: 40px;
+    border: 1px solid #425895;
+    padding: 4em;
+    gap:1.2rem;
+
+    .image-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #29355FBF;
+    backdrop-filter: blur(2px);
+    border-radius: 40px;
+    width: 48em;
+    height: 20em;
+    color: white;
+    }
+}
+
+  .add-more-btn{
+    background-color: #0E47AF;
+        height: 40px;
+        width: 110px;
+        border-radius: 10px;
+        display: grid;
+        place-content: center;
+        cursor: pointer;
+  }
+
+  @media (max-width:1200px){
+    .frame-main-container{
+    .main-heading{
+        font-size: 35px;
+    }
+    .sub-heading{
+        font-size: 28px;
+    }
+    .sub-text{
+        font-size: 18px;
+    }
+    .transparent-input{
+        height: 3em;
+    width: 36em;
+    border-radius: 10px;
+    }
+    .image-box{
+        width: 36em;
+        height: 20em;
+    }
+    .transparent-input-description{
+        height: 5em;
+    width: 36em;
+    border-radius: 10px;
+    }
+    .properties-container{
+        width: 36em;
+    }
+    .property-component-1, .property-component-2{
+        gap:7rem;
+
+    }
+}
+}
+
+@media (max-width:800px){
+    .frame-main-container{
+    .main-heading{
+        font-size: 25px;
+    }
+    .sub-heading{
+        font-size: 20px;
+    }
+    .sub-text{
+        font-size: 15px;
+    }
+    .transparent-input{
+        height: 3em;
+    width: 20em;
+    border-radius: 10px;
+    }
+    .image-box{
+        width: 20em;
+        height: 20em;
+    }
+    .transparent-input-description{
+        height: 6em;
+    width: 20em;
+    border-radius: 10px;
+    }
+    .properties-container{
+        width: 20em;
+        height: 13em;
+    }
+    .property-component-1, .property-component-2{
+        gap:2rem;
+
+    }
+}
+}

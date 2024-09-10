@@ -9,6 +9,7 @@ import './main.scss';
 import DeployNft from './Pages/DeployNft.jsx';
 import DeployMultiple from './Pages/DeployMultiple.jsx';
 import LaunchNft from './Pages/LaunchNft/LaunchNft.jsx';
+import FrameMint from './Pages/Farcaster/FrameMint.jsx';
 
 
 const router = (
@@ -21,6 +22,7 @@ const router = (
         <Route path="/deploy-nft" element={<DeployNft />}/>
         <Route path="/multiple-edition" element={<DeployMultiple />}/>
         <Route path="/launch-nft" element={<LaunchNft />}/>
+        <Route path="/frame-mint" element={<FrameMint />}/>
       </Route>
       </Routes>
     </BrowserRouter>

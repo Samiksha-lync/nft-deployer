@@ -19,11 +19,11 @@ function Home() {
         <div className="Main-container">
             <div className="container">
                     <div className="button-container">
-                        <p onClick={showNftContent}>1/1 NFT</p>
-                        <p onClick={showMultipleContent}>Multiple Editions</p>
-                        <p onClick={showCollectionContent}>Collection</p>
-                        <p onClick={showWeb3Content}>Web3 Games</p>
-                        <p onClick={showFarcasterContent}>Farcaster Frame Mint</p>
+                        <button className="secondary-header" onClick={showNftContent}>1/1 NFT</button>
+                        <button className="secondary-header" onClick={showMultipleContent}>Multiple Editions</button>
+                        <button className="secondary-header" onClick={showCollectionContent}>Collection</button>
+                        <button className="secondary-header" onClick={showWeb3Content}>Web3 Games</button>
+                        <button className="secondary-header" onClick={showFarcasterContent}>Farcaster Frame Mint</button>
                     </div>
                         {content}
             </div>

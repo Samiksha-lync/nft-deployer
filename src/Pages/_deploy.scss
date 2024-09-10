@@ -31,7 +31,9 @@ flex-direction: column;
 align-items: center;
 }
 .transparent-input {
-    background-color:rgba(3, 8, 34, 0.1) ;
+    background:linear-gradient(
+      #202B4ED9,#060D22D9
+    );
     border: 1px solid white ;
     color: #fff;
     font-size: 16px; 
