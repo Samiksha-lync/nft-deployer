@@ -18,7 +18,7 @@ function Header(){
         <div className="header">
             <div className='header-items'>
             <div className='logo'>
-                <img src='public\WHITE TEXT 1.png' className='logo-img'/>
+                <img src='WHITE TEXT 1.png' className='logo-img'/>
             </div>
             <button className="nav-toggle" onClick={toggleNavbar}>
                 {isNavOpen ? <FaTimes size={24} style={{ color: 'white' }}/> : <FaBars size={24} style={{ color: 'white' }} />}
