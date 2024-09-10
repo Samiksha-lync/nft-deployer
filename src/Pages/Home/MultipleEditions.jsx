@@ -11,7 +11,7 @@ function Multiple(){
     return(
         <div className="inside-container">
         <div className="box-container">
-            <img src="src\Pages\Home\Group 1110166311.png" className="multi-img" />
+            <img src="Group 1110166311.png" className="multi-img" />
         </div>
         <div className="text-container">
             <div className="heading-1">

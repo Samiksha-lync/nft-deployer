@@ -19,7 +19,7 @@ function YourContracts(){
                             Chain
                         </div>
                         <div className="arrow-btn">
-                            <img src="src\Pages\Vector (3).png" />
+                            <img src="Vector (3).png" />
                         </div>
                     </div>
                 </div>

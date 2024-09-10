@@ -4,7 +4,7 @@ function Web(){
     return(
         <div className="inside-container">
         <div className="box-container">
-            <img src="src\Pages\Home\web-img.png" className="web3-img" />
+            <img src="web-img.png" className="web3-img" />
         </div>
         <div className="text-container">
             <div className="heading-1">

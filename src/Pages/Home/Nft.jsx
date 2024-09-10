@@ -14,7 +14,7 @@ function Nft(){
     return(
        <div className="inside-container">
         <div className="box-container">
-            <img src="src\Pages\Home\Group 1110166308.png" className="nft-img"/>
+            <img src="Group 1110166308.png" className="nft-img"/>
         </div>
         <div className="text-container">
             <div className="heading-1">

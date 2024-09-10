@@ -11,7 +11,7 @@ function Collection(){
     return(
         <div className="inside-container">
         <div className="box-container">
-            <img src="src\Pages\Home\Group 1110166309.png" className="collection-img" />
+            <img src="Group 1110166309.png" className="collection-img" />
         </div>
         <div className="text-container">
             <div className="heading-1">
