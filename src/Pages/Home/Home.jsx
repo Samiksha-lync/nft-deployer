@@ -7,31 +7,87 @@ import Web3 from './Web3';
 import Farcaster from './Farcaster';
 
 function Home() {
+    // State to hold the current content and active button
     const [content, setContent] = useState(<Nft />);
+    const [active, setActive] = useState('1/1 NFT');
 
-    const showNftContent = () => setContent(<Nft />);
-    const showMultipleContent = () => setContent(<MultipleEditions />);
-    const showCollectionContent = () => setContent(<Collection />);
-    const showWeb3Content = () => setContent(<Web3 />);
-    const showFarcasterContent = () => setContent(<Farcaster />);
+    const showNftContent = () => {
+        setContent(<Nft />);
+        setActive('1/1 NFT');
+    };
+
+    const showMultipleContent = () => {
+        setContent(<MultipleEditions />);
+        setActive('Multiple Editions');
+    };
+
+    const showCollectionContent = () => {
+        setContent(<Collection />);
+        setActive('Collection');
+    };
+
+    const showWeb3Content = () => {
+        setContent(<Web3 />);
+        setActive('Web3 Games');
+    };
+
+    const showFarcasterContent = () => {
+        setContent(<Farcaster />);
+        setActive('Farcaster Frame Mint');
+    };
 
     return (
         <div className="Main-container">
             <div className="container">
-                    <div className="button-container">
-                        <ul>
-                            <li><div className="secondary-header" onClick={showNftContent}> 1/1 NFT</div></li>
-                            <li><div className="secondary-header" onClick={showMultipleContent}> Multiple Editions</div></li>
-                            <li><div className="secondary-header" onClick={showCollectionContent}> Collection</div></li>
-                            <li><div className="secondary-header" onClick={showWeb3Content}>Web3 Games</div></li>
-                            <li><div className="secondary-header" onClick={showFarcasterContent}>Farcaster Frame Mint</div></li>
-                         </ul>
-                    </div>
-                        {content}
+                <div className="button-container">
+                    <ul>
+                        <li>
+                            <div
+                                className={`secondary-header ${active === '1/1 NFT' ? 'active' : ''}`}
+                                onClick={showNftContent}
+                            >
+                                1/1 NFT
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                className={`secondary-header ${active === 'Multiple Editions' ? 'active' : ''}`}
+                                onClick={showMultipleContent}
+                            >
+                                Multiple Editions
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                className={`secondary-header ${active === 'Collection' ? 'active' : ''}`}
+                                onClick={showCollectionContent}
+                            >
+                                Collection
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                className={`secondary-header ${active === 'Web3 Games' ? 'active' : ''}`}
+                                onClick={showWeb3Content}
+                            >
+                                Web3 Games
+                            </div>
+                        </li>
+                        <li>
+                            <div
+                                className={`secondary-header ${active === 'Farcaster Frame Mint' ? 'active' : ''}`}
+                                onClick={showFarcasterContent}
+                            >
+                                Farcaster Frame Mint
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                {content}
             </div>
             <div className="round-patch">
-                <img src="Ellipse 182.png" className="rotate"/>
-                <img src="Ellipse 182.png" className="rotate-1"/>
+                <img src="Ellipse 182.png" className="rotate" alt="Decorative" />
+                <img src="Ellipse 182.png" className="rotate-1" alt="Decorative" />
             </div>
         </div>
     );

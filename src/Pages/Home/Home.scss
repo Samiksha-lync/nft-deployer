@@ -83,8 +83,12 @@
       text-decoration:none;
       list-style-type: none;
     }
-    li.active{
-      background-color: #425895;
+    .secondary-header.active{
+      color:#5181e880;
+      padding: 1.1rem;
     }
+    .secondary-header:not(.active) {
+      color: white; 
+  }
 
   }

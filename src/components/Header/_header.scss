@@ -74,7 +74,6 @@
     position: absolute;
     top: 40px; 
     right: 0;
-    padding: 1rem; 
     z-index: 5; 
     .items{
         gap:0.1rem;
@@ -121,5 +120,9 @@
         position: absolute;
         right: 10px;
         top: 10px; 
+    }
+    .header{
+        height: 50px;
+        padding: 0.3rem;
     }
 }
