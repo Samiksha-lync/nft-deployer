@@ -30,8 +30,8 @@ function Home() {
                         {content}
             </div>
             <div className="round-patch">
-                <img src="public/Ellipse 182.png" className="rotate"/>
-                <img src="public/Ellipse 182.png" className="rotate-1"/>
+                <img src="Ellipse 182.png" className="rotate"/>
+                <img src="Ellipse 182.png" className="rotate-1"/>
             </div>
         </div>
     );
