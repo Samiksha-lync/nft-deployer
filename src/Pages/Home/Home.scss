@@ -28,7 +28,11 @@
       width: 90%;
     }
   }
-
+@media(max-width:900px){
+  .container{
+    height: 800px;
+  }
+}
   .button-container ul{
     display: flex;
     flex-direction: row;

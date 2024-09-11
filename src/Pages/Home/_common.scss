@@ -13,7 +13,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:1rem;
+    gap:1.5rem;
 
     .text{
         display: flex;
@@ -32,9 +32,10 @@
         place-content: center;
         cursor: pointer;
     }
-}
-.heading-1{
-    font-size: 2.3rem;
+    .heading-1{
+        font-size: 3rem;
+    }
+    
 }
 .heading{
     display: flex;
@@ -43,6 +44,7 @@
     align-items: center;
     font-size: 2.2rem;
 }
+
 
 .box-container{
     width: 400px;
@@ -56,4 +58,16 @@
     max-width: 100%;
     height: 100%;
 }
-
+@media(max-width:900px){
+    .text-container{
+        .heading-1{
+            font-size: 2rem;
+        }
+        .text{
+            font-size: 1rem;
+        }  
+    }
+    .inside-container{
+        flex-direction: column;
+    }
+}
