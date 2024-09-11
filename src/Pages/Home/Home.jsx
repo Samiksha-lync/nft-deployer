@@ -29,6 +29,10 @@ function Home() {
                     </div>
                         {content}
             </div>
+            <div className="round-patch">
+                <img src="dist/Ellipse 182.png" className="rotate"/>
+                <img src="dist/Ellipse 182.png" className="rotate-1"/>
+            </div>
         </div>
     );
 }

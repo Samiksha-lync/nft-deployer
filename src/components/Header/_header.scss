@@ -5,7 +5,9 @@
 }
 
 .header {
-    background: transparent;
+    background: linear-gradient(
+       to right, #182241d9,#060D22D9
+    );
     backdrop-filter: blur(2px);
     box-shadow: 0px 3px 10px 5px rgba(52, 87, 202, 0.2);
     color: #fff;
