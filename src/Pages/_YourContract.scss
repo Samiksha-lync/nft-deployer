@@ -93,3 +93,17 @@
         justify-content: center;
         border-radius: 10px;
 }
+@media(max-width:900px){
+    .main-container-heading{
+        font-size: 1.6rem;
+    }
+    .main-container-text{
+        font-size:1rem;
+    }
+    .main-container-text-2{
+        font-size: 1rem;
+    }
+    .container-btns{
+        flex-direction: column;
+    }
+}
