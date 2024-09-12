@@ -20,42 +20,35 @@
         color: #FFFFFF;
     }
 }
-.property-components{
+.property-group{
     display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-.properties-container{
-    background:linear-gradient(
-      #202B4ED9,#060D22D9
-    );
-    border: 1px solid rgb(184, 183, 183) ;
-    color: #fff;
-    height: 12em;
+    flex-direction: row;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
     width: 48em;
-    border-radius: 10px;
-    padding: 1rem;
-    font-size: 16px; 
+    height: 5em;
+  input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+}
+.properties{
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-
-    .property-component-1, .property-component-2{
-        display: flex;
-        flex-direction: row;
-        gap:12rem;
-
-    }
-    .images{
-        display: flex;
-        flex-direction: row;
-        gap:1rem;
-        .img-1{
-            height: 30px;
-            width: 30px;
-        }
-    }
+    gap:2rem;
+    width: 48em;
+    background:linear-gradient(
+        #091334d9,#060D22D9
+      );
+      border: 1px solid rgb(184, 183, 183) ;
+      color: #fff;
+      border-radius: 10px;
+      padding: 0.6em 0.2em 0.6em 0.2em ;
 }
+ 
+
 .transparent-input {
     background:linear-gradient(
       #202B4ED9,#060D22D9
@@ -122,6 +115,13 @@
     color: white;
     }
 }
+.remove-btn{
+    background:transparent;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 0.4rem;
+}
 
   .add-more-btn{
     background-color: #0E47AF;
@@ -158,12 +158,12 @@
     width: 36em;
     border-radius: 10px;
     }
-    .properties-container{
+    .properties{
         width: 36em;
+        height: 7em;
     }
-    .property-component-1, .property-component-2{
-        gap:7rem;
-
+    .property-group{
+        width: 36em;
     }
 }
 }
@@ -193,13 +193,13 @@
     width: 20em;
     border-radius: 10px;
     }
-    .properties-container{
+    .properties{
         width: 20em;
-        height: 13em;
+        height: 7em;
     }
-    .property-component-1, .property-component-2{
-        gap:2rem;
-
+    .property-group{
+        width: 18em;
+        height: 4em;
     }
 }
 }
