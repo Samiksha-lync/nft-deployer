@@ -1,4 +1,4 @@
-.launch-main-container{
+.smart-contract-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,52 +32,43 @@
     border-radius: 40px;
     border: 1px solid #425895;
     padding: 4em;
-    gap:1.2rem;
+    gap:2.5rem;
 
-    .image-box{
+}
+.token-btn{
+    border: 1px solid #FFFFFFBF;
+    height: 2.3em;
+    width: 6em;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+}
+.overview-btn{
+    border: 1px solid #3772DE;
+    border-radius: 10px;
+    height: 2.3em;
+    width: 7em;
+    display: grid;
+    place-content: center;
+}
+.detail{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #29355FBF;
-    backdrop-filter: blur(2px);
-    border-radius: 40px;
-    width: 48em;
-    height: 20em;
-    color: white;
-    }
-    .transparent-input {
-        background:linear-gradient(
-          rgba(15, 15, 73, 0.6), 
-        rgba(10, 8, 48, 0.5)
-        );
-        border: 1px solid white;
-        color: #fff;
-        border-radius: 20px;
-        height: 5em;
-        width: 48em; 
-        padding: 1rem;
-      
-        input::placeholder {
-          color: #cec9c9; 
-          font-size: 1rem;
-        }
-      }
-      label{
-        font-size: 0.7rem;
-        position: relative;
-        top: -10px;
-        .required {
-          color: red; 
-          font-weight: bold;
-          margin-left: 3px; 
-      }
-      input{
-        border: none;
-        outline: none;
-      }
-      
-      }
+    gap:1.3rem;
+}
+.contract-details{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+    gap:10rem;
+}
+.buttons-side{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
 }
 .sub-text{
     font-size: 24px;
@@ -88,12 +79,23 @@
     flex-direction: column;
     align-items: center;
     }
-    
-     
-    
+    .transparent-input {
+        background-color:rgba(3, 8, 34, 0.1) ;
+        border: 1px solid white ;
+        color: #fff;
+        font-size: 16px; 
+        border-radius: 20px;
+        height: 5em;
+        width: 48em;
+      
+        &::placeholder {
+          color: #ccc; 
+          padding: 2em;
+        }
+      }
 
       @media (max-width:1200px){
-        .launch-main-container{
+        .smart-contract-container{
         .main-heading{
             font-size: 35px;
         }
@@ -104,7 +106,7 @@
             font-size: 18px;
         }
         .transparent-input{
-            height: 4em;
+            height: 3em;
         width: 36em;
         border-radius: 10px;
         }
@@ -117,8 +119,9 @@
     }
     }
 
+
     @media (max-width:800px){
-        .launch-main-container{
+        .smart-contract-container{
         .main-heading{
             font-size: 25px;
         }
@@ -129,7 +132,7 @@
             font-size: 20px;
         }
         .transparent-input{
-            height: 4em;
+            height: 3em;
         width: 20em;
         border-radius: 10px;
         }

@@ -16,10 +16,38 @@ function DeployNft(){
                 <div>or listed. Typically, it reflects your artist name, collection name, brand, or project name.</div>
             </div>
             <div className="detail-boxes">
-            <input type="text" className="transparent-input" placeholder="Contract Name" required />
-            <input type="text" className="transparent-input" placeholder="Contract Symbol" required />
-            <input type="text" className="transparent-input" placeholder="Ethereum" required />
-            <input type="text" className="transparent-input" placeholder="ERC721A" required />
+            <form className="transparent-input">
+                    <label>Contract Name <span className="required">*</span>
+                    <input
+                    type="text"
+                    placeholder="Contract Name"
+                    required />
+                    </label>
+                </form>
+                <form className="transparent-input">
+                    <label>Contract Symbol <span className="required">*</span>
+                    <input
+                    type="text"
+                    placeholder="Contract Symbol"
+                    required />
+                    </label>
+                </form>
+                <form className="transparent-input">
+                    <label>Choose Coin <span className="required">*</span>
+                    <input
+                    type="text"
+                    placeholder="Ethereum"
+                    required />
+                    </label>
+                </form>
+                <form className="transparent-input">
+                    <label>Type <span className="required">*</span>
+                    <input
+                    type="text"
+                    placeholder="ERC721A"
+                    required />
+                    </label>
+                </form>
             </div>
             <div className="connect-wallet-btn">
                 Connect Wallet

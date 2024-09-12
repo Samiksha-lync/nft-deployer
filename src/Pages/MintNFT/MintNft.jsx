@@ -1,11 +1,11 @@
 import React from "react";
-import './_framemint.scss';
+import './_mintnft.scss';
 
-function FrameMint(){
+function MintNft(){
     return(
         <div className="frame-main-container">
         <div className="main-heading">
-        Farcaster Frame  MInt
+        MInt NFT
         </div>
         <div className="sub-heading">
         Please draft your contract details with care
@@ -18,22 +18,8 @@ function FrameMint(){
             <div className="image-box">
                 <div><img src="public\Vector (4).png"/></div><div>Upload Image Or GIF</div>
             </div>
-            <form className="transparent-input">
-                    <label>Title <span className="required">*</span>
-                    <input
-                    type="text"
-                    placeholder="Title"
-                    required />
-                    </label>
-                </form>
-                <form className="transparent-input">
-                    <label>Description <span className="required">*</span>
-                    <input
-                    type="text"
-                    placeholder="Description"
-                    required />
-                    </label>
-                </form>
+            <input type="text" className="transparent-input" placeholder="Title" required />
+        <input type="text" className="transparent-input-description" placeholder="Description" required />
 
         <div className="properties-container">
             <div>Properties</div>
@@ -58,20 +44,13 @@ function FrameMint(){
             <div className="add-more-btn">Add More</div>
         </div>
 
-        <form className="transparent-input">
-                    <label>Created By<span className="required">*</span>
-                    <input
-                    type="text"
-                    placeholder="Created By"
-                    required />
-                    </label>
-                </form>
+        <input type="text" className="transparent-input" placeholder="Created By" required />
         </div>
         <div className="connect-wallet-btn">
-            Connect Wallet
+            Mint NFT
         </div>
     </div>
     )
 }
 
-export default FrameMint;
+export default MintNft;

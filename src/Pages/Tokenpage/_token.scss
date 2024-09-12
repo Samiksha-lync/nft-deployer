@@ -1,0 +1,107 @@
+.mint-main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:3rem;
+    position: relative;
+    top:4em;
+}
+.mint-container{
+    background: linear-gradient(
+        #080d1ed9,#060D22D9
+    );
+    backdrop-filter: blur(2px);
+    box-shadow: 0 20px 10px 10px rgba(10, 30, 81, 0.2);
+    height: 40em;
+    width: 90rem;
+    border-radius: 40px;
+    border: 1px solid #425895;
+    color: white;
+    margin-bottom: 40px;
+}
+@media (max-width: 1300px) {
+    .mint-container {
+      width: 90%;
+    }
+  }
+.mint-heading{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+    color:#3070E5 ;
+
+}
+.head-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+    color: white;
+    .left-section{
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+    }
+    .right-section{
+        display: flex;
+        flex-direction: row;
+        gap:2rem;
+    }
+}
+.overview-button{
+    border: 1px solid #FFFFFFBF;
+    height: 3em;
+    width: 7em;
+    border-radius: 10px;
+    display: grid;
+    place-content: center;
+}
+.token-button{
+    border: 1px solid #3772DE;
+    border-radius: 10px;
+    height: 3em;
+    width: 7em;
+    display: grid;
+    place-content: center;
+}
+.main-middle-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top:10em;
+    gap:4rem;
+    .main-text{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 40px;
+    }
+    .create-button{
+        background: linear-gradient(
+            #0E47AF,#1B4A9F
+        );
+        padding: 22px 60px 22px 60px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width:1200px){
+    .main-middle-container{
+ .main-text{
+    font-size: 24px;
+ }
+}
+}
+@media (max-width:700px){
+    .main-middle-container{
+        .main-text{
+           font-size: 18px;
+        }
+       }
+       .head-section{
+        .left-section{
+            font-size: 1.2rem;
+        }
+       }
+}

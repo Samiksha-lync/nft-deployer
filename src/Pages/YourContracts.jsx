@@ -15,12 +15,17 @@ function YourContracts(){
                         Your Contracts
                     </div>
                     <div className="right-container">
-                        <div className="chain-text">
-                            Chain
-                        </div>
-                        <div className="arrow-btn">
-                            <img src="Vector (3).png" />
-                        </div>
+                    <div className="chain">
+                        <select id="chain" >
+                            <option value>Chain</option>
+                            <option value="ethereum">Ethereum</option>
+                            <option value="base">Base</option>
+                            <option value="polygon">Polygon</option>
+                            <option value="sepolia">Sepolia</option>
+                            <option value="base-sepolia">Base Sepolia</option>
+                            <option value="polygon-amoy">Polygon Amoy</option>
+                        </select>
+                     </div>
                     </div>
                 </div>
                 <div className="contract-main-container">

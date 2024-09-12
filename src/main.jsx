@@ -17,7 +17,7 @@ const router = (
       <Routes>
         <Route path= "/" element= {<Layout />}>
         <Route index element={<Home />}/>
-        <Route path="/YourContracts" element={<YourContracts />}/>
+        <Route path="/YourContracts" element={< YourContracts/>}/>
         <Route path="/Tutorials" element={<Tutorials />}/>
         <Route path="/deploy-nft" element={<DeployNft />}/>
         <Route path="/multiple-edition" element={<DeployMultiple />}/>
