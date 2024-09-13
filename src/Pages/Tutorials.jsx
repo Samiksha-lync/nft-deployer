@@ -43,7 +43,7 @@ function Home() {
                     <ul>
                         <li>
                             <div
-                                className={`secondary-header ${active === '1/1 NFT' ? 'active' : ''}`}
+                                className={`secondary-header-1 ${active === '1/1 NFT' ? 'active' : ''}`}
                                 onClick={showNftContent}
                             >
                                 1/1 NFT
@@ -51,7 +51,7 @@ function Home() {
                         </li>
                         <li>
                             <div
-                                className={`secondary-header ${active === 'Multiple Editions' ? 'active' : ''}`}
+                                className={`secondary-header-2 ${active === 'Multiple Editions' ? 'active' : ''}`}
                                 onClick={showMultipleContent}
                             >
                                 Multiple Editions
@@ -59,7 +59,7 @@ function Home() {
                         </li>
                         <li>
                             <div
-                                className={`secondary-header ${active === 'Collection' ? 'active' : ''}`}
+                                className={`secondary-header-3 ${active === 'Collection' ? 'active' : ''}`}
                                 onClick={showCollectionContent}
                             >
                                 Collection
@@ -67,7 +67,7 @@ function Home() {
                         </li>
                         <li>
                             <div
-                                className={`secondary-header ${active === 'Web3 Games' ? 'active' : ''}`}
+                                className={`secondary-header-4 ${active === 'Web3 Games' ? 'active' : ''}`}
                                 onClick={showWeb3Content}
                             >
                                 Web3 Games
@@ -75,7 +75,7 @@ function Home() {
                         </li>
                         <li>
                             <div
-                                className={`secondary-header ${active === 'Farcaster Frame Mint' ? 'active' : ''}`}
+                                className={`secondary-header-5 ${active === 'Farcaster Frame Mint' ? 'active' : ''}`}
                                 onClick={showFarcasterContent}
                             >
                                 Farcaster Frame Mint

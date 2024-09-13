@@ -51,10 +51,6 @@ function DeployMultiple(){
                     required />
                     </label>
                 </form>
-            {/* <input type="text" className="transparent-input" placeholder="Contract Name" required />
-            <input type="text" className="transparent-input" placeholder="Contract Symbol" required />
-            <input type="text" className="transparent-input" placeholder="Ethereum" required />
-            <input type="text" className="transparent-input" placeholder="ERC 1155" required /> */}
             </div>
             <div className="connect-wallet-btn" >
                 Connect Wallet

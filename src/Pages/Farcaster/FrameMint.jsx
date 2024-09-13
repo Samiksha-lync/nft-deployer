@@ -4,20 +4,20 @@ import './_framemint.scss';
 function FrameMint() {
     const [properties, setProperties] = useState([{ id: 1, title: '', value: '' }]);
 
-    // Handler to add a single property pair
+   
     const addMoreProperties = () => {
         const newId = properties.length ? properties[properties.length - 1].id + 1 : 1;
         setProperties([...properties, { id: newId, title: '', value: '' }]);
     };
 
-    // Handler to update property title or value
+
     const handleChange = (id, field, value) => {
         setProperties(properties.map(prop =>
             prop.id === id ? { ...prop, [field]: value } : prop
         ));
     };
 
-    // Handler to remove a property pair
+    
     const removeProperty = (id) => {
         setProperties(properties.filter(prop => prop.id !== id));
     };
